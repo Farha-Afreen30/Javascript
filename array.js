@@ -53,7 +53,7 @@ employees.unshift(
   { id: 7, name: "Grace", salary: 90000, department: "Finance" },
   { id: 8, name: "Hank", salary: 48000, department: "IT" }
 );
-console.log("Employees after Adding Grace and Hank:", employees);
+console.log("Employees after Adding new ones:", employees);
 
 // 11. some (Checking if any employee earns more than 75,000)
 const HighEarner = employees.some(emp => emp.salary > 75000);
