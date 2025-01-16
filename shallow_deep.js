@@ -6,6 +6,9 @@ const original = {
 // shallow copy using spread operator
 const shallowCopy = { ...original };
 
+//using Object.assign
+//const copy = Object.assign({}, original);
+
 shallowCopy.skills.push("CSS");
 
 console.log("Original:", original);
