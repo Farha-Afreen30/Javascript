@@ -10,7 +10,7 @@ const data = new Promise((resolve, reject) => {
 });
 
 function getDetails(name) {
-    const details = new Promise((resolve,reject)=>{
+    const userdetails = new Promise((resolve,reject)=>{
         setTimeout(() => {
             let details = [{name: "Farha", age: 20}];
             const user = details.find(user=>user.name===name);
@@ -21,15 +21,15 @@ function getDetails(name) {
             }
         }, 1000);
     });
-return details;
+return userdetails;
 }
 
 data
     .then((name) => {
         return getDetails(name);
     })
-    .then((details) => {
-        console.log(details)
+    .then((userdetails) => {
+        console.log(userdetails)
     })
     .catch((error) =>{
         console.log(error.message);
