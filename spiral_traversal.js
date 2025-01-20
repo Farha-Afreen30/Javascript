@@ -1,6 +1,8 @@
 function spiralTraverse(matrix) {
     let result = [];
-    if (matrix.length === 0) return result;
+    if (matrix.length === 0) {
+        return result
+    };
 
     let top = 0;                 
     let bottom = matrix.length - 1;  
