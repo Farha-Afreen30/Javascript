@@ -22,8 +22,10 @@ debouncedFunction("Call 4");
 debouncedFunction("Call 5");
 debouncedFunction("Call 6");
 debouncedFunction("Call 7");
-debouncedFunction("Call 8");
-//output: Debounced: Call 8
+setTimeout(() => debouncedFunction("Call 8"), 1000);
+//output: 
+//Debounced: Call 7
+//Debounced: Call 8
 
 //Throttling
 
